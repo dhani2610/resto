@@ -44,7 +44,7 @@
   
           <div class="section-title">
             <h2>Why Us</h2>
-            <p>Why Choose Our Restaurant</p>
+            <p>Why Choose Our Tepi Danau Bistro</p>
           </div>
   
           <div class="row">
@@ -212,7 +212,7 @@
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Gallery</h2>
-            <p>Some photos from Our Restaurant</p>
+            <p>Some photos from Our Tepi Danau Bistro</p>
           </div>
         </div>
   
