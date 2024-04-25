@@ -167,7 +167,7 @@
               <div class="error-message"></div>
               <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
             </div>
-            <div class="text-center"><button type="submit">Book a Table</button></div>
+            <div class="text-center"><a href="https://api.whatsapp.com/send/?phone=6281264761015&text=Hallo%20Saya%20Ingin%20Booking&type=phone_number&app_absent=0" style="border-radius:10px;border:1px solid #cda45e;color:#cda45e" class="btn" target="_blank" type="submit">Book a Table</a></div>
           </form>
   
         </div>
@@ -247,7 +247,7 @@
   
             <div class="col-lg-4 col-md-6">
               <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                <img src="fe/assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
                     <h4>Walter White</h4>
@@ -265,7 +265,7 @@
   
             <div class="col-lg-4 col-md-6">
               <div class="member" data-aos="zoom-in" data-aos-delay="200">
-                <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+                <img src="fe/assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
                     <h4>Sarah Jhonson</h4>
@@ -283,7 +283,7 @@
   
             <div class="col-lg-4 col-md-6">
               <div class="member" data-aos="zoom-in" data-aos-delay="300">
-                <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+                <img src="fe/assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
                 <div class="member-info">
                   <div class="member-info-content">
                     <h4>William Anderson</h4>
@@ -320,41 +320,37 @@
   
         <div class="container" data-aos="fade-up">
   
-          <div class="row mt-5">
-  
+          <div class="row">
+         
             <div class="col-lg-4">
               <div class="info">
-                <div class="address">
+                <div class="email">
                   <i class="bi bi-geo-alt"></i>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Jl. Pemandian No.1, Sangkar Nihuta, Kec. Balige, Toba, Sumatera Utara 22312
+                </p>
                 </div>
-  
-                <div class="open-hours">
-                  <i class="bi bi-clock"></i>
-                  <h4>Open Hours:</h4>
-                  <p>
-                    Monday-Saturday:<br>
-                    11:00 AM - 2300 PM
-                  </p>
-                </div>
-  
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info">
                 <div class="email">
                   <i class="bi bi-envelope"></i>
                   <h4>Email:</h4>
                   <p>info@example.com</p>
                 </div>
-  
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info">
                 <div class="phone">
                   <i class="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+1 5589 55488 55s</p>
+                  <p>0812-6476-1015</p>
                 </div>
-  
               </div>
-  
             </div>
-  
+{{--   
             <div class="col-lg-8 mt-5 mt-lg-0">
   
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
@@ -380,7 +376,7 @@
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
   
-            </div>
+            </div> --}}
   
           </div>
   
