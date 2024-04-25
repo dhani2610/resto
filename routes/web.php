@@ -6,6 +6,7 @@ use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InfoUserController;
 use App\Http\Controllers\JamBukaController;
+use App\Http\Controllers\MenuController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ResetController;
 use App\Http\Controllers\SessionsController;
@@ -25,9 +26,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+
 Route::group(['middleware' => 'auth'], function () {
 
-	Route::get('/', function () {
+	Route::get('/login', function () {
 		if (Auth::user()) {
 			return redirect('/login');
 		}
@@ -55,6 +60,11 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::post('/jam-buka-store', [JamBukaController::class, 'store'])->name('jam-buka-store');
 	Route::post('/jam-buka-update/{id}', [JamBukaController::class, 'update'])->name('jam-buka-update');
 	Route::get('/jam-buka-delete/{id}', [JamBukaController::class, 'destroy'])->name('jam-buka-delete');
+
+	Route::get('/menu', [MenuController::class, 'index'])->name('menu');
+	Route::post('/menu-store', [MenuController::class, 'store'])->name('menu-store');
+	Route::post('/menu-update/{id}', [MenuController::class, 'update'])->name('menu-update');
+	Route::get('/menu-delete/{id}', [MenuController::class, 'destroy'])->name('menu-delete');
 
     Route::get('/logout', [SessionsController::class, 'destroy']);
 	Route::get('/user-management', [InfoUserController::class, 'userManagement'])->name('user-management');
