@@ -28,6 +28,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('book-table', [HomeController::class, 'bookTable'])->name('book-table');
 
 
 Route::group(['middleware' => 'auth'], function () {

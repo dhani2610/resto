@@ -131,7 +131,7 @@
             <p>Book a Table</p>
           </div>
   
-          <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <form action="{{ route('book-table') }}" method="get" role="form" class="php-email-form-v2" data-aos="fade-up" data-aos-delay="100">
             <div class="row">
               <div class="col-lg-4 col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -167,7 +167,7 @@
               <div class="error-message"></div>
               <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
             </div>
-            <div class="text-center"><a href="https://api.whatsapp.com/send/?phone=6281264761015&text=Hallo%20Saya%20Ingin%20Booking&type=phone_number&app_absent=0" style="border-radius:10px;border:1px solid #cda45e;color:#cda45e" class="btn" target="_blank" type="submit">Book a Table</a></div>
+            <div class="text-center"><button type="submit" type="submit">Book a Table</button></div>
           </form>
   
         </div>
@@ -353,7 +353,7 @@
 {{--   
             <div class="col-lg-8 mt-5 mt-lg-0">
   
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form-v2">
                 <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>

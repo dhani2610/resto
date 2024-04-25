@@ -25,4 +25,33 @@ class HomeController extends Controller
 
 		return view('landing/index',$data);
     }
+
+    public function bookTable(Request $request)
+    {
+        // Validasi formulir disini jika diperlukan
+        
+        // Ambil data dari formulir
+        $name = $request->input('name');
+        $email = $request->input('email');
+        $phone = $request->input('phone');
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $people = $request->input('people');
+        $message = $request->input('message');
+        
+        // Format pesan untuk dikirim ke WhatsApp
+        $whatsapp_message = "Nama: $name\nEmail: $email\nPhone: $phone\nDate: $date\nTime: $time\n# of People: $people\nMessage: $message";
+
+        // Encode pesan untuk URL
+        $encoded_message = urlencode($whatsapp_message);
+
+        // Nomor WhatsApp tujuan
+        $whatsapp_number = "6281264761015"; // Ganti dengan nomor WhatsApp yang dituju
+
+        // URL untuk mengarahkan ke WhatsApp dengan pesan yang disiapkan
+        $whatsapp_url = "https://api.whatsapp.com/send/?phone=$whatsapp_number&text=$encoded_message";
+
+        // Redirect pengguna ke URL WhatsApp
+        return redirect()->away($whatsapp_url);
+    }
 }
