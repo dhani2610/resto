@@ -12,7 +12,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
 
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>0812-6476-1015</span></i>
+        <i class="bi bi-phone d-flex align-items-center"><span>0812-9996-9695</span></i>
         {{-- <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i> --}}
       </div>
 
@@ -35,7 +35,7 @@
       <div class="row">
         <div class="col-lg-8">
           <h1>Welcome to <span>Tepi Danau Bistro</span></h1>
-          <h2>Delivering great food for more than 18 years!</h2>
+          <h2>Presenting Luxurious Comfort in Every Meal, Embraced by the Beauty of the Lake</h2>
 
           <div class="btns">
             <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+          <a href="https://youtu.be/wMs1YhwG1C8?si=jJSOyWKqWToLLUnT" class="glightbox play-btn"></a>
         </div>
 
       </div>
@@ -52,13 +52,13 @@
 
   <main id="main">
     @yield('content')
-    
+
   </main>
   <!-- End #main -->
 
   <!-- ======= Footer ======= -->
   @include('layouts-landing.footer')
- 
+
   <!-- End Footer -->
 
   <div id="preloader"></div>

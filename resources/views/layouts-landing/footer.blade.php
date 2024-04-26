@@ -8,7 +8,7 @@
               <h3 style="font-weight: 900">TEPI DANAU BISTRO</h3>
               <p>
                 Jl. Pemandian No.1, Sangkar Nihuta, <br> Kec. Balige, Toba, <br> Sumatera Utara 22312<br><br>
-                <strong>Phone:</strong> 0812-6476-1015<br>
+                <strong>Phone:</strong> 0812-9996-9695<br>
                 <strong>Email:</strong> info@example.com<br>
               </p>
               <div class="social-links mt-3">
@@ -38,7 +38,7 @@
                 @foreach ($jambuka as $jb)
                 <li><i class="bx bx-chevron-right"></i> <a href="#">{{ $jb->hari }}, {{ $jb->jam_buka }} - {{ $jb->jam_tutup }}</a></li>
                 @endforeach
-             
+
             </ul>
           </div>
 

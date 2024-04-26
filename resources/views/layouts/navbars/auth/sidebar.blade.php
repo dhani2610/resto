@@ -8,8 +8,8 @@
   <div class="sidenav-header">
     <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
     <a class="align-items-center d-flex m-0 navbar-brand text-wrap" href="{{ route('dashboard') }}">
-        <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="...">
-        <span class="ms-3 font-weight-bold">Dashboard Resto</span>
+        <img src="../assets/img/logo-dashboard.png" class="navbar-brand-img h-100" alt="...">
+        <span class="ms-3 font-weight-bold">Dashboard Tepi Danau Bistro</span>
     </a>
   </div>
   <hr class="horizontal dark mt-0">
@@ -49,7 +49,7 @@
       <li class="nav-item pb-2">
         <a class="nav-link {{ (Request::is('testimoni') ? 'active' : '') }}" href="{{ url('testimoni') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('testimoni') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
+                <i style="font-size: 1rem;" class="fas fa-lg fa-portrait ps-2 pe-2 text-center text-dark {{ (Request::is('testimoni') ? 'text-white' : 'text-dark') }}" aria-hidden="true"></i>
             </div>
             <span class="nav-link-text ms-1">Testimoni</span>
         </a>
@@ -57,21 +57,21 @@
       <li class="nav-item pb-2">
         <a class="nav-link {{ (Request::is('galery') ? 'active' : '') }}" href="{{ url('galery') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('galery') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
+                <i style="font-size: 1rem;" class="fas fa-lg fa-images ps-2 pe-2 text-center text-dark {{ (Request::is('gallery') ? 'text-white' : 'text-dark') }}" aria-hidden="true"></i>
             </div>
-            <span class="nav-link-text ms-1">Galery</span>
+            <span class="nav-link-text ms-1">Gallery</span>
         </a>
       </li>
-   
+
       <li class="nav-item pb-2">
         <a class="nav-link {{ (Request::is('category') ? 'active' : '') }}" href="{{ url('category') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('category') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
+                <i style="font-size: 1rem;" class="fas fa-lg fa-th-large ps-2 pe-2 text-center text-dark {{ (Request::is('category') ? 'text-white' : 'text-dark') }}" aria-hidden="true"></i>
             </div>
-            <span class="nav-link-text ms-1">Categoy Menu</span>
+            <span class="nav-link-text ms-1">Category Menu</span>
         </a>
       </li>
-   
+
       <li class="nav-item pb-2">
         <a class="nav-link {{ (Request::is('menu') ? 'active' : '') }}" href="{{ url('menu') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
@@ -80,11 +80,11 @@
             <span class="nav-link-text ms-1">Menu</span>
         </a>
       </li>
-   
+
       <li class="nav-item pb-2">
         <a class="nav-link {{ (Request::is('jam-buka') ? 'active' : '') }}" href="{{ url('jam-buka') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('jam-buka') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
+                <i style="font-size: 1rem;" class="fas fa-lg fa-clock ps-2 pe-2 text-center text-dark {{ (Request::is('jam-buka') ? 'text-white' : 'text-dark') }}" aria-hidden="true"></i>
             </div>
             <span class="nav-link-text ms-1">Hour Open</span>
         </a>

@@ -9,7 +9,7 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">
-  
+
           <div class="row">
             <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="about-img">
@@ -34,21 +34,21 @@
               </p>
             </div>
           </div>
-  
+
         </div>
       </section><!-- End About Section -->
-  
+
       <!-- ======= Why Us Section ======= -->
       <section id="why-us" class="why-us">
         <div class="container" data-aos="fade-up">
-  
+
           <div class="section-title">
             <h2>Why Us</h2>
             <p>Why Choose Our Tepi Danau Bistro</p>
           </div>
-  
+
           <div class="row">
-  
+
             <div class="col-lg-4">
               <div class="box" data-aos="zoom-in" data-aos-delay="100">
                 <span>01</span>
@@ -56,7 +56,7 @@
                 <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
               </div>
             </div>
-  
+
             <div class="col-lg-4 mt-4 mt-lg-0">
               <div class="box" data-aos="zoom-in" data-aos-delay="200">
                 <span>02</span>
@@ -64,7 +64,7 @@
                 <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
               </div>
             </div>
-  
+
             <div class="col-lg-4 mt-4 mt-lg-0">
               <div class="box" data-aos="zoom-in" data-aos-delay="300">
                 <span>03</span>
@@ -72,21 +72,21 @@
                 <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
               </div>
             </div>
-  
+
           </div>
-  
+
         </div>
       </section><!-- End Why Us Section -->
-  
+
       <!-- ======= Menu Section ======= -->
       <section id="menu" class="menu section-bg">
         <div class="container" data-aos="fade-up">
-  
+
           <div class="section-title">
             <h2>Menu</h2>
             <p>Check Our Tasty Menu</p>
           </div>
-  
+
           <div class="row" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="menu-flters">
@@ -97,9 +97,9 @@
               </ul>
             </div>
           </div>
-  
+
           <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
-  
+
 
             @foreach ($menu as $m)
                 @php
@@ -115,22 +115,22 @@
               </div>
             </div>
             @endforeach
-           
+
           </div>
-  
+
         </div>
       </section><!-- End Menu Section -->
-  
-     
+
+
       <!-- ======= Book A Table Section ======= -->
       <section id="book-a-table" class="book-a-table">
         <div class="container" data-aos="fade-up">
-  
+
           <div class="section-title">
             <h2>Reservation</h2>
             <p>Book a Table</p>
           </div>
-  
+
           <form action="{{ route('book-table') }}" method="get" role="form" class="php-email-form-v2" data-aos="fade-up" data-aos-delay="100">
             <div class="row">
               <div class="col-lg-4 col-md-6 form-group">
@@ -169,19 +169,19 @@
             </div>
             <div class="text-center"><button type="submit" type="submit">Book a Table</button></div>
           </form>
-  
+
         </div>
       </section><!-- End Book A Table Section -->
-  
+
       <!-- ======= Testimonials Section ======= -->
       <section id="testimonials" class="testimonials section-bg">
         <div class="container" data-aos="fade-up">
-  
+
           <div class="section-title">
             <h2>Testimonials</h2>
             <p>What they're saying about us</p>
           </div>
-  
+
           <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
 
@@ -198,28 +198,28 @@
                   </div>
                 </div><!-- End testimonial item -->
                 @endforeach
-  
+
             </div>
             <div class="swiper-pagination"></div>
           </div>
-  
+
         </div>
       </section><!-- End Testimonials Section -->
-  
+
       <!-- ======= Gallery Section ======= -->
       <section id="gallery" class="gallery">
-  
+
         <div class="container" data-aos="fade-up">
           <div class="section-title">
             <h2>Gallery</h2>
             <p>Some photos from Our Tepi Danau Bistro</p>
           </div>
         </div>
-  
+
         <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-  
+
           <div class="row g-0">
-  
+
             @foreach ($galery as $g)
             <div class="col-lg-3 col-md-4">
               <div class="gallery-item">
@@ -230,21 +230,21 @@
             </div>
             @endforeach
           </div>
-  
+
         </div>
       </section><!-- End Gallery Section -->
-  
+
       <!-- ======= Chefs Section ======= -->
       <section id="chefs" class="chefs">
         <div class="container" data-aos="fade-up">
-  
+
           <div class="section-title">
             <h2>Teams</h2>
             <p>Our Proffesional Teams</p>
           </div>
-  
+
           <div class="row">
-  
+
             <div class="col-lg-4 col-md-6">
               <div class="member" data-aos="zoom-in" data-aos-delay="100">
                 <img src="fe/assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
@@ -262,7 +262,7 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="col-lg-4 col-md-6">
               <div class="member" data-aos="zoom-in" data-aos-delay="200">
                 <img src="fe/assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
@@ -280,7 +280,7 @@
                 </div>
               </div>
             </div>
-  
+
             <div class="col-lg-4 col-md-6">
               <div class="member" data-aos="zoom-in" data-aos-delay="300">
                 <img src="fe/assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
@@ -298,30 +298,30 @@
                 </div>
               </div>
             </div>
-  
+
           </div>
-  
+
         </div>
       </section><!-- End Chefs Section -->
-  
+
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
-  
+
           <div class="section-title">
             <h2>Contact</h2>
             <p>Contact Us</p>
           </div>
         </div>
-  
+
         <div data-aos="fade-up">
           <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1072.5138029372895!2d99.05637513405325!3d2.3343521486342818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e051111b888f7%3A0x7b92db9623ce4f01!2sTepi%20Danau%20Bistro!5e0!3m2!1sid!2sid!4v1714011010601!5m2!1sid!2sid" frameborder="0" allowfullscreen></iframe>
         </div>
-  
+
         <div class="container" data-aos="fade-up">
-  
+
           <div class="row">
-         
+
             <div class="col-lg-4">
               <div class="info">
                 <div class="email">
@@ -350,9 +350,9 @@
                 </div>
               </div>
             </div>
-{{--   
+{{--
             <div class="col-lg-8 mt-5 mt-lg-0">
-  
+
               <form action="forms/contact.php" method="post" role="form" class="php-email-form-v2">
                 <div class="row">
                   <div class="col-md-6 form-group">
@@ -375,14 +375,14 @@
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
               </form>
-  
+
             </div> --}}
-  
+
           </div>
-  
+
         </div>
       </section><!-- End Contact Section -->
-  
+
 @endsection
 
 @section('script-fe')
