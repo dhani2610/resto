@@ -13,9 +13,9 @@ class CategoryController extends Controller
     public function index()
     {
         $data['page_title'] = 'Category Menu';
-        $data['category'] = Category::orderBy('id','desc')->get();
+        $data['category'] = Category::orderBy('id', 'desc')->get();
 
-		return view('category.index',$data);
+        return view('category.index', $data);
     }
 
     /**
@@ -36,10 +36,10 @@ class CategoryController extends Controller
             $data->kategori = $request->category;
             $data->save();
 
-            return redirect()->back()->with('success','Save data successfully');
+            return redirect()->back()->with('success', 'Save data successfully');
 
         } catch (\Throwable $th) {
-            return redirect()->back()->with('failed','Failed save data successfully');
+            return redirect()->back()->with('failed', 'Failed save data successfully');
         }
     }
 
@@ -69,10 +69,10 @@ class CategoryController extends Controller
             $data->kategori = $request->category;
             $data->save();
 
-            return redirect()->back()->with('success','Save data successfully');
+            return redirect()->back()->with('success', 'Save data successfully');
 
         } catch (\Throwable $th) {
-            return redirect()->back()->with('failed','Failed save data successfully');
+            return redirect()->back()->with('failed', 'Failed save data successfully');
         }
     }
 
@@ -85,9 +85,9 @@ class CategoryController extends Controller
             $data = Category::find($id);
             $data->delete();
 
-            return redirect()->back()->with('success','Delete data successfully');
+            return redirect()->back()->with('success', 'Delete data successfully');
         } catch (\Throwable $th) {
-            return redirect()->back()->with('failed','Failed delete data successfully');
+            return redirect()->back()->with('failed', 'Failed delete data successfully');
         }
     }
 }

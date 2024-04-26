@@ -12,14 +12,14 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
 
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-phone d-flex align-items-center"><span>0812-9996-9695</span></i>
+        <i class="bi bi-telephone d-flex align-items-center"><span>0812-9996-9695</span></i>
         {{-- <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sat: 11AM - 23PM</span></i> --}}
       </div>
 
       <div class="languages d-none d-md-flex align-items-center">
         <ul>
           <li>En</li>
-          <li><a href="#">De</a></li>
+          <li><a href="#">Id</a></li>
         </ul>
       </div>
     </div>

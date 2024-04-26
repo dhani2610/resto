@@ -344,9 +344,9 @@
             <div class="col-lg-4">
               <div class="info">
                 <div class="phone">
-                  <i class="bi bi-phone"></i>
+                  <i class="bi bi-telephone"></i>
                   <h4>Call:</h4>
-                  <p>0812-6476-1015</p>
+                  <p>0812-9996-9695</p>
                 </div>
               </div>
             </div>

@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CatatanKeuangan;
 use App\Models\Category;
 use App\Models\Galery;
 use App\Models\JamBuka;
@@ -12,12 +11,15 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function dashboard(Request $request){
+    public function dashboard(Request $request)
+    {
         $data['page_title'] = 'Dashboard';
 
-		return view('dashboard',$data);
+        return view('dashboard', $data);
     }
-    public function index(Request $request){
+
+    public function index(Request $request)
+    {
         $data['page_title'] = 'Home';
         $data['testimoni'] = Testimoni::get();
         $data['galery'] = Galery::get();
@@ -25,13 +27,13 @@ class HomeController extends Controller
         $data['menu'] = Menu::get();
         $data['jambuka'] = JamBuka::get();
 
-		return view('landing/index',$data);
+        return view('landing/index', $data);
     }
 
     public function bookTable(Request $request)
     {
         // Validasi formulir disini jika diperlukan
-        
+
         // Ambil data dari formulir
         $name = $request->input('name');
         $email = $request->input('email');
@@ -40,7 +42,7 @@ class HomeController extends Controller
         $time = $request->input('time');
         $people = $request->input('people');
         $message = $request->input('message');
-        
+
         // Format pesan untuk dikirim ke WhatsApp
         $whatsapp_message = "Nama: $name\nEmail: $email\nPhone: $phone\nDate: $date\nTime: $time\n# of People: $people\nMessage: $message";
 
