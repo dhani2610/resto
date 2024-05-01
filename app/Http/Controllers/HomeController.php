@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
+use App\Models\CatatanKeuangan;
 use App\Models\Category;
 use App\Models\Galery;
 use App\Models\JamBuka;
 use App\Models\Menu;
+use App\Models\Team;
 use App\Models\Testimoni;
 use Illuminate\Http\Request;
 
@@ -26,6 +29,8 @@ class HomeController extends Controller
         $data['category'] = Category::get();
         $data['menu'] = Menu::get();
         $data['jambuka'] = JamBuka::get();
+        $data['team'] = Team::get();
+        $data['about'] = About::first();
 
         return view('landing/index', $data);
     }

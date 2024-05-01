@@ -39,11 +39,11 @@
         <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Menu</h6>
       </li>
       <li class="nav-item pb-2">
-        <a class="nav-link {{ (Request::is('laporan-keuangan') ? 'active' : '') }}" href="#">
+        <a class="nav-link {{ (Request::is('about') ? 'active' : '') }}" href="{{ url('about') }}">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-                <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('laporan-keuangan') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
+                <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('about') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
             </div>
-            <span class="nav-link-text ms-1">Setting General <b>(Soon)</b></span>
+            <span class="nav-link-text ms-1">About</span>
         </a>
       </li>
       <li class="nav-item pb-2">
@@ -87,6 +87,14 @@
                 <i style="font-size: 1rem;" class="fas fa-lg fa-clock ps-2 pe-2 text-center text-dark {{ (Request::is('jam-buka') ? 'text-white' : 'text-dark') }}" aria-hidden="true"></i>
             </div>
             <span class="nav-link-text ms-1">Hour Open</span>
+        </a>
+      </li>
+      <li class="nav-item pb-2">
+        <a class="nav-link {{ (Request::is('team') ? 'active' : '') }}" href="{{ url('team') }}">
+            <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                <i style="font-size: 1rem;" class="fas fa-lg fa-list-ul ps-2 pe-2 text-center text-dark {{ (Request::is('team') ? 'text-white' : 'text-dark') }} " aria-hidden="true"></i>
+            </div>
+            <span class="nav-link-text ms-1">Team</span>
         </a>
       </li>
       <li class="nav-item mt-2">

@@ -12,7 +12,10 @@ class TeamController extends Controller
      */
     public function index()
     {
-        //
+        $data['page_title'] = 'Team';
+        $data['team'] = Team::orderBy('id','desc')->get();
+
+		return view('team.index',$data);
     }
 
     /**
@@ -28,7 +31,24 @@ class TeamController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        try {
+            $data = new Team();
+            $data->nama = $request->nama;
+            $data->posisi = $request->posisi;
+            if ($request->hasFile('foto')) {
+                $image = $request->file('foto');
+                $name = time() . '.' . $image->getClientOriginalExtension();
+                $destinationPath = public_path('assets/img/team/');
+                $image->move($destinationPath, $name);
+                $data->foto = $name;
+            }
+            $data->save();
+
+            return redirect()->back()->with('success','Save data successfully');
+
+        } catch (\Throwable $th) {
+            return redirect()->back()->with('failed','Failed save data successfully');
+        }
     }
 
     /**
@@ -50,16 +70,41 @@ class TeamController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Team $team)
+    public function update(Request $request, $id)
     {
-        //
+        try {
+            $data = Team::find($id);
+            $data->nama = $request->nama;
+            $data->posisi = $request->posisi;
+            if ($request->hasFile('foto')) {
+                $image = $request->file('foto');
+                $name = time() . '.' . $image->getClientOriginalExtension();
+                $destinationPath = public_path('assets/img/team/');
+                $image->move($destinationPath, $name);
+                $data->foto = $name;
+            }
+            $data->save();
+
+            return redirect()->back()->with('success','Save data successfully');
+
+        } catch (\Throwable $th) {
+            return redirect()->back()->with('failed','Failed save data successfully');
+        }
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Team $team)
+    public function destroy($id)
     {
-        //
+        try {
+            $data = Team::find($id);
+            $data->delete();
+
+            return redirect()->back()->with('success','delete data successfully');
+
+        } catch (\Throwable $th) {
+            return redirect()->back()->with('failed','Failed delete data successfully');
+        }
     }
 }
